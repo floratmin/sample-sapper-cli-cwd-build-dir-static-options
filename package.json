@@ -3,7 +3,8 @@
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev --build-dir $(pwd)/apps/web-page/__sapper__/dev --cwd ./apps/web-page",
+    "dev": "sapper dev --cwd ./apps/web-page",
+    "dev:builddir": "sapper dev --build-dir $(pwd)/apps/web-page/__sapper__/dev --cwd ./apps/web-page",
     "dev:static": "sapper dev --build-dir $(pwd)/apps/web-page/__sapper__/dev --cwd ./apps/web-page --static $(pwd)/static",
     "build": "sapper build $(pwd)/apps/web-page/__sapper__/build --cwd ./apps/web-page",
     "build:builddir": "sapper build $(pwd)/__sapper__/build --cwd ./apps/web-page",
